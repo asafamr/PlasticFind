@@ -1,6 +1,6 @@
 ## In Short
 
-This is a POC for a very simple and affordable implementation of full-text search over large scale data.
+This is a POC for a simple and affordable implementation of large scale full-text search.
 Pre-computed ElasticSearch results are put on CDN and fetched on demand in client - without backend.
 You can try it by searching Wikibook's Cookbook at the [bottom of this page](#search).
 
