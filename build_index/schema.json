@@ -1,0 +1,75 @@
+{
+  
+  "settings": {
+    "index": {
+      "analyze.max_token_count": 200000,
+      "analysis": {
+        "filter": {
+          "lowercase": {
+            "type": "lowercase"
+          },
+          "truncate_keyword": {
+            "length": "20",
+            "type": "truncate"
+          },
+          "remove_empty": {
+            "type": "length",
+            "min": "1"
+          },
+          "aggressive_splitting": {
+            "type": "word_delimiter",
+            "preserve_original": "false",
+            "stem_english_possessive": "false"
+          },
+          "asciifolding": {
+            "type": "asciifolding",
+            "preserve_original": "false"
+          },
+          "english_stemmer": {
+            "type":       "stemmer",
+            "language":   "english"
+          }
+        },
+        "char_filter": {
+          "remove_annotation": {
+            "type": "pattern_replace",
+            "pattern": "&&[0-9]+&& ",
+            "replacement": " "
+          }
+        },
+        "analyzer": {
+          "stemmed":{
+            "tokenizer":  "standard",
+            "char_filter": [
+              "remove_annotation"
+            ],
+            "filter": [
+              "asciifolding",
+              "lowercase",
+              "english_stemmer"
+            ]
+          },
+          "unstemmed":{
+            "tokenizer":  "standard",
+            "char_filter": [
+              "remove_annotation"
+            ],
+            "filter": [
+              "asciifolding",
+              "remove_empty",
+              "lowercase"
+            ]
+          }
+        }
+        
+      },
+      "similarity": {
+        "default": {
+          "type": "BM25"
+        }
+      },
+      "number_of_shards": 1,
+      "number_of_replicas": 0
+    }
+  }
+}

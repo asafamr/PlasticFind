@@ -1,0 +1,40 @@
+{
+  "page": {
+    "dynamic": "false",
+    "properties": {
+      "popularity_score": {
+        "type": "double"
+      },
+      "text": {
+        "type": "text",
+        "similarity": "BM25",
+        "fields": {
+          "stemmed": {
+            "type": "text",
+            "index_options": "offsets",
+            "similarity": "BM25",
+            "term_vector": "with_positions_offsets",
+            "analyzer": "stemmed"
+          }
+        },
+        "fielddata": true,
+        "analyzer": "unstemmed"
+      },
+      "title": {
+        "type": "text",
+        "similarity": "BM25",
+        "fields": {
+          "stemmed": {
+            "type": "text",
+            "index_options": "offsets",
+            "similarity": "BM25",
+            "term_vector": "with_positions_offsets",
+            "analyzer": "stemmed"
+          }
+        },
+        "fielddata": true,
+        "analyzer": "unstemmed"
+      }
+    }
+  }
+}

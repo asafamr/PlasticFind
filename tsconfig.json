@@ -1,0 +1,14 @@
+{
+  "extends": "@tsconfig/svelte/tsconfig.json",
+  "compilerOptions": {
+    "lib": [ "ES2020.Promise","es2019.array","ES2015","ES2016","DOM" ],
+    "target": "ES5"
+    ,
+    "typeRoots":  [
+      "node_modules/@types","./typings.d.ts"
+    ],
+  },
+  
+  "include": ["src/**/*"],
+  "exclude": ["node_modules/*", "__sapper__/*", "public/*"]
+}
