@@ -14,7 +14,7 @@ test("stemmer should stem (Porter stemmer)", async () => {
 });
 
 
-test("stemmer should stem like elastic (UAX#29)", async () => {
+test("stemmer should stem like elastic", async () => {
   const text=`
   Hello-looo this12text is herE TO
      

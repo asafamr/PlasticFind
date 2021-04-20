@@ -21,5 +21,5 @@ The code is [here](https://github.com/asafamr/PlasticSearched). If you need help
 
 - Jamstack blogs
 - Technical documentations
-- IoT / Embedded Web Interfaces
-- You have a lot of traffic but SaaS Search is too expansive
+- IoT / embedded web interfaces
+- You have a lot of traffic but SaaS search is too expansive
