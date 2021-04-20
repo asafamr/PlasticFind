@@ -10,7 +10,7 @@ A side project: pre-computed ElasticSearch results were put in CDN and are joine
 
 Code is [here](https://github.com/asafamr/PlasticSearched), Feel free to use it as you would like. If you need help, just open an issue or contact me: asaf.amrami at gmail
 
-* Image by [monkik](https://www.flaticon.com/authors/monkik)
+* Illustration by [monkik](https://www.flaticon.com/authors/monkik)
 * The code uses [fuzzysort](https://github.com/farzher/fuzzysort) for fuzzy matching into terms.
 
 ## Benefits:
@@ -20,7 +20,7 @@ Code is [here](https://github.com/asafamr/PlasticSearched), Feel free to use it 
 * Cheap: Only pay for storage and bandwidth
 * Robust: test during compilation and deploy for years. JavaScript is undegradable.
 
-## Usecases:
+## Use Cases:
 * JAMStack blogs
 * Technical Documentations
 * IoT / Embedded Web Interfaces
