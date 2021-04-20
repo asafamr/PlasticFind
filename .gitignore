@@ -3,7 +3,7 @@ __pycache__/
 *$py.class
 
 node_modules/
-
+public/build
 .ipynb_checkpoints
 
 profile_default/
