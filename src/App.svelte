@@ -67,6 +67,7 @@
     {@html introText.html}
   </div>
 
+  <a id="search"></a>
   <SearchBar />
 </main>
 
