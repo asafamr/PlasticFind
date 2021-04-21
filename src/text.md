@@ -1,10 +1,10 @@
 ## In Short
 
 This is a POC for a scalable, simple and affordable full-text search.
-Pre-computed ElasticSearch results are put on CDN and fetched on demand in client - without requiring an online search engine.
+Pre-computed ElasticSearch term results are put on CDN and fetched individually on demand - without requiring an online search engine.
 You can try it by searching Wikibook's Cookbook at the [bottom of this page](#search).
 
-The client also does prefix and fuzzy matching into (subsets of) the vocabulary (with [fuzzysort](https://github.com/farzher/fuzzysort)), Porter stemming ([porter-stemmer](https://github.com/jedp/porter-stemmer)), UAX#29 tokenization ([unicode-default-word-boundary](https://github.com/eddieantonio/unicode-default-word-boundary)) and some fetch retry logic ([axios](https://github.com/axios/axios), [axios-retry](https://github.com/softonic/axios-retry)).
+The client also does prefix and fuzzy matching into (relevant subsets of) the vocabulary (with [fuzzysort](https://github.com/farzher/fuzzysort)), Porter stemming ([porter-stemmer](https://github.com/jedp/porter-stemmer)), UAX#29 tokenization ([unicode-default-word-boundary](https://github.com/eddieantonio/unicode-default-word-boundary)) and some fetch retry logic ([axios](https://github.com/axios/axios), [axios-retry](https://github.com/softonic/axios-retry)).
 Code is [here](https://github.com/asafamr/PlasticSearched). Preprocessing is in Python and frontend in [Svelte](https://svelte.dev/).
 If you need any help with it, feel free to open an issue or just contact me: asaf.amrami at gmail.
 
