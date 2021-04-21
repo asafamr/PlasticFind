@@ -53,21 +53,22 @@
     }
   </style>
 
-  <svg class="header-logo" viewBox="0 0 100 31">
-    <image href="./plastic.svg" height="20" width="20" x="80" y="10" />
-    <text font-size="12" x="0" y="19">PlasticSearched</text>
-    <text x="0" y="24" font-size="3">Shrink wrapped ElasticSearch* results</text
-    >
-    <text x="0" y="29" font-size="2"
-      >* I'm not associated with ElasticSearch in any way
-    </text>
-    </svg
+  <svg class="header-logo" viewBox="0 0 100 31"
+    ><image href="./plastic.svg" height="20" width="20" x="80" y="10" /><text
+      font-size="12"
+      x="0"
+      y="19">PlasticSearched</text
+    ><text x="0" y="24" font-size="5"
+      >Shrink wrapped ElasticSearch* results</text
+    ><text x="0" font-size="3" y="30"
+      >* I'm not associated with ElasticSearch in any way</text
+    ></svg
   >
   <div class="intro">
     {@html introText.html}
   </div>
 
-  <a id="search"></a>
+  <a id="search" />
   <SearchBar />
 </main>
 

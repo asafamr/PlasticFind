@@ -191,11 +191,15 @@ export class TermFetcher {
 
   protected async fetchTermResults(term: string): Promise<TermResult[]> {
     const percentEncoded = percentEncode(term);
-    const res: unknown[] = await this.requestManager.getJson(
-      `${this.wordUrlPrefix}/${percentEncoded}.json`,
-      {}
-    );
-    return res.map(
+    const res = await this.requestManager
+      .getJson(`${this.wordUrlPrefix}/${percentEncoded}.json`, {})
+      .catch((err) => {
+        if (err?.response?.status === 404) {
+          console.log(`%c 404 Not Found errors are expected`, "color: green");
+        }
+        throw err;
+      });
+    return (res as unknown[]).map(
       (r) =>
         <TermResult>{
           docId: r["id"],

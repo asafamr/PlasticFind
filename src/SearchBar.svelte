@@ -30,10 +30,10 @@
     undefined
   );
 
-  function devMessage(msg: string) {
-    console.log(`%c ${msg}`, "color: green");
-  }
-  devMessage("404 Not Found errors are expected...");
+  // function devMessage(msg: string) {
+  //   console.log(`%c ${msg}`, "color: green");
+  // }
+  // devMessage("404 Not Found errors are expected...");
 
   let queryString = "";
   const inputChanged = (e: { detail: string }) => {
